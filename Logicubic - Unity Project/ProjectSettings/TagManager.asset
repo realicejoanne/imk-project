@@ -7,6 +7,10 @@ TagManager:
   - plane_left
   - plane_right
   - plane_up
+  - plane_down
+  - plane_bended
+  - plane_front
+  - plane_rear
   layers:
   - Default
   - TransparentFX

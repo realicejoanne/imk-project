@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7EA926DB-A647-B23C-EA97-413507F108FF}</ProjectGuid>
+    <ProjectGuid>{42F87687-E1D4-E1B2-D44E-4DD62A3D844D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AddBoxColliderPostProcessor.cs" />
      <Compile Include="Assets\CameraTest.cs" />
      <Compile Include="Assets\cube.cs" />
      <Compile Include="Assets\GravityManager.cs" />
