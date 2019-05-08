@@ -11,6 +11,7 @@ TagManager:
   - plane_bended
   - plane_front
   - plane_rear
+  - Objective
   layers:
   - Default
   - TransparentFX

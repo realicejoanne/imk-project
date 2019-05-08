@@ -6,6 +6,7 @@ using UnityEngine;
 public class Objective : MonoBehaviour {
 
 	AudioSource audioData;
+	public string colliderTagName;
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +14,7 @@ public class Objective : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision collisionInfo){
-		if (collisionInfo.collider.tag == "Player"){
+		if (collisionInfo.collider.tag == colliderTagName){
 			audioData.Play(0);
 			Debug.Log("Started Playing");
 		}
