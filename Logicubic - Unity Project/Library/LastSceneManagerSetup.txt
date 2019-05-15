@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene yoman.unity
+- path: Assets/Level/Level 1.unity
   isLoaded: 1
   isActive: 1
