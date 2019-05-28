@@ -942,7 +942,6 @@ GameObject:
   - component: {fileID: 1191437652}
   - component: {fileID: 1191437651}
   - component: {fileID: 1191437650}
-  - component: {fileID: 1191437649}
   m_Layer: 0
   m_Name: Cube Player
   m_TagString: Player
@@ -950,19 +949,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &1191437649
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1191437648}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  m_Radius: 0.2613833
-  m_Height: 0.5227666
-  m_Direction: 1
-  m_Center: {x: 0.012712061, y: -0.0860312, z: 0.49320054}
 --- !u!54 &1191437650
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -989,8 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f6b5932bb1c1664cbef570bd588feee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  gravityDirection: 
+  moveSpeed: 4
 --- !u!114 &1191437652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1002,7 +987,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f187816697cf73428ff3772368259a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityStatus: down
 --- !u!23 &1191437653
 MeshRenderer:
   m_ObjectHideFlags: 0

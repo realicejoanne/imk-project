@@ -3,21 +3,20 @@ using System.Collections;
 
 public class GravityManager : MonoBehaviour {
 
-    public string gravityStatus;
+    string gravityStatus;
     CapsuleCollider headCollider;
 
-    void Start(){
+    void Start() {
         gravityStatus = "down";
     }
 
     void OnCollisionEnter(Collision collisionInfo) {
 
-        foreach (ContactPoint contact in collisionInfo.contacts)
-        {
+        foreach (ContactPoint contact in collisionInfo.contacts) {
             //Debug.Log(contact.thisCollider.name + " hit " + contact.otherCollider.name);
 
             // Only change gravity if cube is collision with the FACE
-            if (contact.thisCollider.name == "Face Cube Player") {                
+            if (contact.thisCollider.name == "Face Cube Player") {               
                 // Check what that object collides with 
                 // Debug.Log(collisionInfo.collider.name);
 

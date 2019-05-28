@@ -1146,8 +1146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f6b5932bb1c1664cbef570bd588feee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  gravityDirection: 
+  moveSpeed: 4
 --- !u!114 &1336977348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1159,7 +1158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f187816697cf73428ff3772368259a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityStatus: down
 --- !u!23 &1336977349
 MeshRenderer:
   m_ObjectHideFlags: 0

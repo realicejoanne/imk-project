@@ -6,14 +6,15 @@ public class cube : MonoBehaviour {
 
     public float moveSpeed;
     private GravityManager gm;
-    public string gravityDirection;
+    string gravityDirection;
 
 	// Use this for initialization
 	void Start () {
         gm = GameObject.FindObjectOfType<GravityManager>();
 
         gravityDirection = "down";
-        moveSpeed = 7f;
+        if (moveSpeed == 0)
+            moveSpeed = 7f;
 
         print("Yo im a cube. Called from the start");
 	}
