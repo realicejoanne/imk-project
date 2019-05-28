@@ -4374,7 +4374,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d2ded097ad14d8d48b262f035f27d202, type: 3}
       propertyPath: m_TagString
-      value: plane_bended
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2ded097ad14d8d48b262f035f27d202, type: 3}
       propertyPath: m_LocalScale.x

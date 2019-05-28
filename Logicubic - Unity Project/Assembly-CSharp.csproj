@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\CameraTest.cs" />
+     <Compile Include="Assets\Script\CollTest.cs" />
      <Compile Include="Assets\Script\cube.cs" />
      <Compile Include="Assets\Script\GravityManager.cs" />
      <Compile Include="Assets\Script\LevelChanger.cs" />
