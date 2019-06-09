@@ -59,6 +59,7 @@
      <Compile Include="Assets\Script\LevelChanger.cs" />
      <Compile Include="Assets\Script\ObjectGravityOrientation.cs" />
      <Compile Include="Assets\Script\Objective.cs" />
+     <Compile Include="Assets\Script\TutorialCompletion.cs" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>
