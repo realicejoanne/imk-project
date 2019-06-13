@@ -5,9 +5,11 @@ using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
 public class MusicScript : MonoBehaviour {
+	public string sceneToStopPlay;
 	static bool isMustPlaying = false; 
+	static bool reachesStop = false;
 	AudioSource audioData;
-	Scene sceneCurrent;
+	private Scene sceneCurrent;
 
 	// Use this for initialization
 	void Start () {
@@ -17,17 +19,24 @@ public class MusicScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!isMustPlaying) {
-			audioData.Play(0);
-			DontDestroyOnLoad (gameObject);
-			isMustPlaying = true;
-		}
-
 		sceneCurrent = SceneManager.GetActiveScene();
+
+		if (!reachesStop){
+			if (!isMustPlaying) {
+				audioData.Play(0);
+				Debug.Log("Play at " +sceneCurrent.name);
+				DontDestroyOnLoad (gameObject);
+				isMustPlaying = true;
+			}
+		}		
 		
-		if (sceneCurrent.name == "Level 0" || sceneCurrent.name == "Level Picker"){
-			audioData.Stop();
-			isMustPlaying = false;
+		if (!reachesStop){
+			if (sceneCurrent.name == sceneToStopPlay){
+				Debug.Log("Stop at " +sceneCurrent.name);
+				audioData.Stop();
+				reachesStop = true;
+			}
 		}
+		
 	}
 }

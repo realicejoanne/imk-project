@@ -1180,7 +1180,7 @@ GameObject:
   - component: {fileID: 1854423471}
   - component: {fileID: 1854423473}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: Audio Source MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1290,3 +1290,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c7d578b8cbed749b39f45583fc24fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToStopPlay: Level Picker
