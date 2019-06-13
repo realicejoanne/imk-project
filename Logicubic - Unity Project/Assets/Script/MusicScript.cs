@@ -5,7 +5,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
 public class MusicScript : MonoBehaviour {
-	static bool AudioBegin = false; 
+	static bool isMustPlaying = false; 
 	AudioSource audioData;
 	Scene sceneCurrent;
 
@@ -17,15 +17,17 @@ public class MusicScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!AudioBegin) {
-			audioData.Play (0);
+		if (!isMustPlaying) {
+			audioData.Play(0);
 			DontDestroyOnLoad (gameObject);
-			AudioBegin = true;
+			isMustPlaying = true;
 		}
 
 		sceneCurrent = SceneManager.GetActiveScene();
+		
 		if (sceneCurrent.name == "Level 0" || sceneCurrent.name == "Level Picker"){
-			Debug.Log(sceneCurrent.name);
+			audioData.Stop();
+			isMustPlaying = false;
 		}
 	}
 }
