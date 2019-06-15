@@ -4,13 +4,13 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class MusicScript : MonoBehaviour {
-	private static MusicScript instance = null;
+public class MusicScript2 : MonoBehaviour {
+	private static MusicScript2 instance = null;
 	public string sceneToStopPlay;
 	AudioSource audioData;
 	Scene sceneCurrent;
 
-	public static MusicScript Instance{
+	public static MusicScript2 Instance{
 		get{
 			return instance;
 		}
