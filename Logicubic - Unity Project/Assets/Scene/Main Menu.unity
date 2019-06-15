@@ -180,7 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: START
+  m_Text: Start
 --- !u!222 &69205187
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -498,9 +498,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'CREDITS
-
-'
+  m_Text: Credits
 --- !u!222 &377258541
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -821,7 +819,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level 0
+          m_StringArgument: Level Picker
           m_BoolArgument: 0
         m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -926,10 +924,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'HOW TO PLAY
-
-
-'
+  m_Text: How to Play
 --- !u!222 &1161717450
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1003,7 +998,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: A PERSPECTIVE TRAINING VR GAME
+  m_Text: A Perspective Training VR Game
 --- !u!222 &1163523426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1206,8 +1201,8 @@ Canvas:
   m_GameObject: {fileID: 1593255945}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 785781460}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
